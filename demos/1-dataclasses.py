@@ -16,14 +16,14 @@ class BlogPost:
 
     @property
     def slug(self):
-        return self.title.lower().replace(' ', '-')
+        return self.title.lower().replace(' ', '-').replace('?', '')
 
     def __len__(self):
         return len(self.body)
 
 
 post = BlogPost(
-    title = "What's New in Python 3.7",
+    title = "What's New in Python 3.7?",
     body = 'Literally this example.\nThis is the second line.'
 )
 

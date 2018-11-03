@@ -2,6 +2,6 @@
 
 import wrap
 
-print('AFTER IMPORT WRAP, BUT BEFORE IMPORT SLOW')
+print('AFTER IMPORT WRAP, BUT BEFORE USE SLOW')
 
 print(wrap.slow.SlowClass)
