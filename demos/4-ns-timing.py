@@ -15,12 +15,12 @@ print(f'monotonic_ns - mono => {time.monotonic_ns() - mono}')
 print()
 
 perf = time.perf_counter_ns()
-time.sleep(.75)
+time.sleep(1)
 print(f'perf_counter_ns - perf => {time.perf_counter_ns() - perf}')
 
 print()
 
 thread = time.thread_time_ns()
-time.sleep(.5)
+time.sleep(1)
 print(f'thread_time_ns - thread => {time.thread_time_ns() - thread}')
 # system + user CPU time = 0 because all we did was sleep!
